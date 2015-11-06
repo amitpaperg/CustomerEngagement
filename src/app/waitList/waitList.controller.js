@@ -50,7 +50,6 @@
 
     function toggleDone(party) {
       vm.parties.$save(party);
-      console.log('in toggleDone');
     }
 
   }
