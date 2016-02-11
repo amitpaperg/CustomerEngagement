@@ -16,15 +16,15 @@
 
     ////////////
 
-    function sendTextMessage(party, parties) {
+    function sendTextMessage(note, notes) {
       var newTextMessage = {
-        phoneNumber: party.phone,
-        size: party.size,
-        name: party.name
+        phoneNumber: note.phone,
+        size: note.size,
+        name: note.name
       };
       firebaseDataService.textMessages.push(newTextMessage);
-      party.notified = true;
-      parties.$save(party);
+      note.notified = true;
+      notes.$save(notes);
     }
   }
 

@@ -2,15 +2,15 @@
   'use strict';
 
   angular
-    .module('app.waitList')
+    .module('app.observationList')
     .config(configFunction);
 
   configFunction.$inject = ['$routeProvider'];
 
   function configFunction($routeProvider) {
-    $routeProvider.when('/waitlist', {
-      templateUrl: 'app/waitList/waitList.html',
-      controller: 'WaitListController',
+    $routeProvider.when('/observationlist', {
+      templateUrl: 'app/observationList/observationList.html',
+      controller: 'ObservationListController',
       controllerAs: 'vm',
       resolve: {user: resolveUser}
     });

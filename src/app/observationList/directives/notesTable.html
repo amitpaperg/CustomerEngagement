@@ -1,0 +1,26 @@
+<table class="table table-striped table-bordered">
+    <thead>
+    <tr>
+        <th>Done?</th>
+        <th>Info</th>
+        <th>Notified?</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tr ng-repeat="note in vm.notes">
+        <td>
+            <input ng-model="note.done" ng-change="vm.toggleDone(note)" type="checkbox">
+        </td>
+        <td>
+            <div><strong>{{ note.name }} ({{ note.size }} people)</strong></div>
+            <div>{{ note.phone }}</div>
+        </td>
+        <td>
+            <div>{{ note.notified ? 'Yes' : 'No' }}</div>
+        </td>
+        <td>
+            <button ng-click="vm.sendTextMessage(note)" class="btn btn-success">Send SMS</button>
+            <button ng-click="vm.removeNote(note)" class="btn btn-danger">Remove</button>
+        </td>
+    </tr>
+</table>
