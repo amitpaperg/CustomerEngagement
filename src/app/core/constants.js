@@ -3,7 +3,7 @@
 
   angular
     .module('app.core')
-    .constant('FIREBASE_URL', 'https://waitandeat-v2-demo.firebaseio.com/')
+    .constant('FIREBASE_URL', 'https://productnotes.firebaseio.com/')
     .constant('PROTECTED_PATHS', ['/waitlist']);
 
 })();
