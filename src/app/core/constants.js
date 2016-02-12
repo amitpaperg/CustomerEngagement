@@ -4,6 +4,6 @@
   angular
     .module('app.core')
     .constant('FIREBASE_URL', 'https://productnotes.firebaseio.com/')
-    .constant('PROTECTED_PATHS', ['/observationlist']);
+    .constant('PROTECTED_PATHS', ['/observationlist','/categorylist']);
 
 })();

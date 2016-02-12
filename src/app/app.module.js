@@ -14,7 +14,8 @@
       'app.core',
       'app.landing',
       'app.layout',
-      'app.observationList'
+      'app.observationList',
+      'app.categoryList'
     ])
     .config(configFunction)
     .run(runFunction);
