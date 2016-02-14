@@ -13,8 +13,17 @@ body {
     font-size: 63px;
 }
 
-.notes-form .categories-form {
+.notes-form {
+    margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.categories-form {
+    margin-bottom: 20px;
+}
+
+.feature-panel {
+    padding: 7px;
 }
 
 /* Auth styles */

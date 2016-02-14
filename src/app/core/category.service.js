@@ -24,7 +24,7 @@
 
     function Category() {
       this.name = '';
-      //this.features = null;
+      this.features = null;
     }
 
     function getCategoriesByUser(uid) {

@@ -11,6 +11,7 @@
   function CategoryListController(categoryService, user) {
     var vm = this;
 
+    vm.uid = user.uid;
     vm.categories  = categoryService.getCategoriesByUser(user.uid);
   }
 
