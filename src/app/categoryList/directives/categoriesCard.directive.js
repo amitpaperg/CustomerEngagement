@@ -3,13 +3,13 @@
 
   angular
     .module('app.categoryList')
-    .directive('gzCategoriesTable', gzCategoriesTable);
+    .directive('gzCategoriesCard', gzCategoriesCard);
 
-  function gzCategoriesTable() {
+  function gzCategoriesCard() {
     return {
-      templateUrl: 'app/categoryList/directives/categoriesTable.html',
+      templateUrl: 'app/categoryList/directives/categoriesCard.html',
       restrict: 'E',
-      controller: CategoriesTableController,
+      controller: CategoriesCardController,
       controllerAs: 'vm',
       bindToController: true,
       scope: {
@@ -19,7 +19,7 @@
     };
   }
 
-  function CategoriesTableController() {
+  function CategoriesCardController() {
     var vm = this;
   }
 
